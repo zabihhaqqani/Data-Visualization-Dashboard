@@ -84,11 +84,11 @@ const BarChart = () => {
           "#9b59b6",
           "#2c3e50",
         ],
-        borderColor: "rgba(75,192,192,1)",
-        borderWidth: 1,
+        borderRadius: 5,
       },
     ],
   };
+  ChartJS.register(Zoom);
 
   return <Bar className="bar-chart" data={chartData} options={options} />;
 };

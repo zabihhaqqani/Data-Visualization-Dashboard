@@ -1,24 +1,32 @@
+.trends-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .fa-arrow-left {
-  font-size: xx-large;
+  font-size: x-large;
   margin: 1rem;
-  color: white;
+  color: black;
 }
 
 .trends-header {
   display: flex;
-  background-color: black;
   text-align: center;
   align-items: center;
-  justify-content: center;
-}
-
-.trends-header h2 {
-  text-align: center;
-  color: white;
+  justify-content: space-around;
 }
 
 .trends-container {
   display: flex;
-  width: 90%;
+  width: 80%;
   justify-content: center;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1240px) {
+  .trends-container {
+    width: 90%;
+  }
 }

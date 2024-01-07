@@ -3,6 +3,7 @@ export const reducer = (state, action) => {
     case "FETCH_DATA":
       return { ...state, data: action.payload };
     case "FILTER_BY_AGE":
+      
       return { ...state, age: action.payload };
     case "FILTER_BY_GENDER":
       return { ...state, gender: action.payload };

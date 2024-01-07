@@ -1,0 +1,6 @@
+.chart-share-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}

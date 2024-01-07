@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Trends from "./pages/trends/Trends";
@@ -35,16 +35,18 @@ function App() {
             </RequiresAuth>
           }
         />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route
-          path="/chartshare"
+          path="/chartshare/:age/:gender/:startDate/:endDate"
           element={
             <RequiresAuth>
               <ChartShare />
             </RequiresAuth>
           }
         />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+
+      
       </Routes>
     </div>
   );

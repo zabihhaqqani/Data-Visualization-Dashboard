@@ -3,8 +3,8 @@
 }
 
 .sidebar {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
+  /* background-color: white; */
+  color: black;
   /* position: fixed; */
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: left;
   padding: 1rem;
-  height: 100vh;
+  /* height: 120vh; */
   z-index: 9;
 }
 .sidebar h4,
@@ -53,6 +53,7 @@
 .filter-header span {
   font-size: x-large;
 }
+
 @media screen and (max-width: 1240px) {
   .mobile {
     width: 100%;
@@ -62,8 +63,9 @@
     position: fixed;
     display: block;
     padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgb(0, 0, 0);
     display: none;
+    color: white;
   }
 
   .sidebar {
@@ -75,6 +77,7 @@
 
     justify-content: space-between;
     padding: 0.5rem;
+    flex-direction: row;
   }
 
   .mobile {

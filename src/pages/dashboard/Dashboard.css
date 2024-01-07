@@ -4,14 +4,16 @@
 
 .logo {
   text-align: center;
-  background-color: black;
-  color: white;
   padding: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .bar-chart-container {
-  min-width: 80%;
+  min-width: 60%;
   margin: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .mobile-mode {
@@ -29,4 +31,15 @@
     bottom: 0;
     margin: 0;
   }
+
+  .bar-chart-container {
+    min-width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  
 }

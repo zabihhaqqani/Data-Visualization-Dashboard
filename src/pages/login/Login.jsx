@@ -34,7 +34,7 @@ export function Login() {
 
   return (
     <>
-      <h2>Welcome to the Flash Analytics Dashboard</h2>
+      <h2 className="logo">Welcome to the Flash Analytics Dashboard</h2>
       <div className="login-form-contianer">
         <form className="login-form">
           <h2>Login</h2>

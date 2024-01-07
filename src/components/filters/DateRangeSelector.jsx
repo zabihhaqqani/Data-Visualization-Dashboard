@@ -4,8 +4,8 @@ import { useDataContext } from "../../context/Context";
 const DateRangeSelector = () => {
   const { dispatch, startDate, endDate } = useDataContext();
   return (
-    <div className="sidebar-items">
-      <form  onSubmit={(e) => e.preventDefault()}>
+    <div >
+      <form  className="sidebar-items" onSubmit={(e) => e.preventDefault()}>
         <input
           type="date"
           value={startDate}
