@@ -1,11 +1,8 @@
-import { Chart, elements } from "chart.js";
-import { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
-import { useDataContext } from "../../context/Context";
 import * as Zoom from "chartjs-plugin-zoom";
-import "./BarChart.css";
+import { Bar } from "react-chartjs-2";
 import { useNavigate } from "react-router-dom";
+import { useDataContext } from "../../context/Context";
 
 const BarChart = () => {
   const navigate = useNavigate();

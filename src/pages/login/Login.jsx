@@ -1,8 +1,7 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
-import { useState } from "react";
 import "./Login.css";
-import Dashboard from "./../dashboard/Dashboard";
 
 export function Login() {
   const navigate = useNavigate();

@@ -1,14 +1,13 @@
+import { parseISO } from "date-fns";
 import {
   createContext,
   useContext,
   useEffect,
-  useReducer,
-  useState,
+  useReducer
 } from "react";
+import Cookies from "universal-cookie";
 import { reducer } from "../reducer/reducer";
 import { fetchData } from "../utils/fetchData";
-import { format, parseISO } from "date-fns";
-import Cookies from "universal-cookie";
 
 const DataContext = createContext();
 

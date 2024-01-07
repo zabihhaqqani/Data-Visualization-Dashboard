@@ -1,11 +1,11 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Dashboard from "./pages/dashboard/Dashboard";
-import Trends from "./pages/trends/Trends";
 import { RequiresAuth } from "./auth/RequiresAuth";
+import ChartShare from "./pages/chartShare/ChartShare";
+import Dashboard from "./pages/dashboard/Dashboard";
 import { Login } from "./pages/login/Login";
 import { SignUp } from "./pages/signup/SignUp";
-import ChartShare from "./pages/chartShare/ChartShare";
+import Trends from "./pages/trends/Trends";
 
 function App() {
   return (

@@ -1,9 +1,8 @@
 import { useDataContext } from "../../context/Context";
 import AgeFilter from "./AgeFilter";
 import DateRangeSelector from "./DateRangeSelector";
-import GenderFilter from "./GenderFilter";
 import "./Filters.css";
-import { useState } from "react";
+import GenderFilter from "./GenderFilter";
 const Filters = () => {
   const { dispatch, clearAllFilters, showFilters } = useDataContext();
 
