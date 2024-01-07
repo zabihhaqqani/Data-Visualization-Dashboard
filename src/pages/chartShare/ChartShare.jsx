@@ -32,7 +32,7 @@ const ChartShare = () => {
     ?.map((item) => [item.a, item.b, item.c, item.d, item.e, item.f])
     .slice(1);
 
-  const resultArray = datasetsData.reduce((acc, curr) => {
+  const resultArray = datasetsData?.reduce((acc, curr) => {
     curr.forEach((value, index) => {
       acc[index] = (acc[index] || 0) + value;
     });
