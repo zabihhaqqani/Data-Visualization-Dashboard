@@ -1,8 +1,6 @@
-import React from "react";
-import BarChart from "../../components/charts/BarChart";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDataContext } from "../../context/Context";
-import { format, parseISO } from "date-fns";
+import {  parseISO } from "date-fns";
 import { Bar } from "react-chartjs-2";
 import "./ChartShare.css";
 
