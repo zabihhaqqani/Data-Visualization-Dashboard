@@ -5,13 +5,7 @@
   margin: 0rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-align: center;
 }
-
-:root {
-  --primarycolor: #fc4c51;
-}
-
 
 h1 {
   font-size: 2.5rem;
@@ -37,7 +31,6 @@ p {
   }
 }
 
-
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -48,4 +41,17 @@ p {
   p {
     font-size: 0.9rem;
   }
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem ;
+  margin-left: 0;
+  color: white;
+  background-color: brown;
+}
+
+button:hover {
+  cursor: pointer;
 }

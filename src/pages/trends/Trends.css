@@ -1,0 +1,24 @@
+.fa-arrow-left {
+  font-size: xx-large;
+  margin: 1rem;
+  color: white;
+}
+
+.trends-header {
+  display: flex;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.trends-header h2 {
+  text-align: center;
+  color: white;
+}
+
+.trends-container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
