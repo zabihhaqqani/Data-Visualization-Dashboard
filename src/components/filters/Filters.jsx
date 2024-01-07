@@ -1,3 +1,4 @@
+import { useAuthContext } from "../../context/AuthContext";
 import { useDataContext } from "../../context/Context";
 import AgeFilter from "./AgeFilter";
 import DateRangeSelector from "./DateRangeSelector";
@@ -5,7 +6,7 @@ import "./Filters.css";
 import GenderFilter from "./GenderFilter";
 const Filters = () => {
   const { dispatch, clearAllFilters, showFilters } = useDataContext();
-
+  const {userLogout} = useAuthContext()
   return (
     <>
       <div className={`${!showFilters ? "sidebar" : "sidebar mobile"}`}>
@@ -29,6 +30,7 @@ const Filters = () => {
           <button className="clear-all-btn" onClick={clearAllFilters}>
             Clear All Filters
           </button>
+          <button onClick={()=>userLogout()}>Logout</button>
         <div>
         </div>
       </div>
