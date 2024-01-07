@@ -11,9 +11,9 @@ const ChartShare = () => {
 
   const dateData = [...data]?.filter(
     (item) =>
-      (!Number(startDate) ||
-        new Date(item.day) >= parseISO(Number(startDate))) &&
-      (!Number(endDate) || new Date(item.day) <= parseISO(Number(endDate)))
+      (!(startDate) ||
+        new Date(item.day) >= parseISO((startDate))) &&
+      (!(endDate) || new Date(item.day) <= parseISO((endDate)))
   );
 
   const filteredData = dateData?.filter(

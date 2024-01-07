@@ -8,7 +8,6 @@ import "./Dashboard.css";
 const Dashboard = () => {
   const { data, dispatch,age,gender,startDate,endDate } = useDataContext();
   const navigate = useNavigate();
-  console.log(data.length);
   return (
     <div>
       <h2 className="logo">Interactive Data Visualization Dashboard</h2>
